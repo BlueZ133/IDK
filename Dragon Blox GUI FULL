@@ -1,0 +1,294 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local DRGBLX = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local _50K = Instance.new("TextButton")
+local _500K = Instance.new("TextButton")
+local _5M = Instance.new("TextButton")
+local _25M = Instance.new("TextButton")
+local Spawn = Instance.new("TextButton")
+local City = Instance.new("TextButton")
+local Forest = Instance.new("TextButton")
+local Plains = Instance.new("TextButton")
+local Desert = Instance.new("TextButton")
+local RuinedCity = Instance.new("TextButton")
+local IceIsland = Instance.new("TextButton")
+local QuestBoard = Instance.new("TextButton")
+local TeleporterNPC = Instance.new("TextButton")
+local DragonBloxAutoRebirth = Instance.new("TextButton")
+local OpenClose = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+DRGBLX.Name = "DRGBLX"
+DRGBLX.Parent = ScreenGui
+DRGBLX.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+DRGBLX.Position = UDim2.new(0.174904943, 0, 0.161033809, 0)
+DRGBLX.Size = UDim2.new(0, 533, 0, 341)
+
+TextLabel.Parent = DRGBLX
+TextLabel.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextLabel.Position = UDim2.new(0.0168855544, 0, 0.0175953079, 0)
+TextLabel.Size = UDim2.new(0, 517, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Dragon Blox TP GUI"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 36.000
+
+_50K.Name = "50K"
+_50K.Parent = DRGBLX
+_50K.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+_50K.Position = UDim2.new(0.0179582722, 0, 0.18221581, 0)
+_50K.Size = UDim2.new(0, 124, 0, 45)
+_50K.Font = Enum.Font.SourceSans
+_50K.Text = "50K"
+_50K.TextColor3 = Color3.fromRGB(255, 255, 255)
+_50K.TextSize = 25.000
+_50K.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2639.65894, 862.698242, 956.888306, 0.286979467, -3.81859508e-07, -0.957936704, -2.26491792e-07, 1, -4.66479662e-07, 0.957936704, 3.5083491e-07, 0.286979467)
+end)
+
+_500K.Name = "500K"
+_500K.Parent = DRGBLX
+_500K.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+_500K.Position = UDim2.new(0.273117721, 0, 0.18221581, 0)
+_500K.Size = UDim2.new(0, 124, 0, 45)
+_500K.Font = Enum.Font.SourceSans
+_500K.Text = "500K"
+_500K.TextColor3 = Color3.fromRGB(255, 255, 255)
+_500K.TextSize = 25.000
+_500K.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1708.94189, 579.707642, 1397.52136, -0.811947525, 4.34494964e-08, -0.583730459, 2.76685235e-08, 1, 3.59482826e-08, 0.583730459, 1.30371589e-08, -0.811947525)
+end)
+
+_5M.Name = "5M"
+_5M.Parent = DRGBLX
+_5M.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+_5M.Position = UDim2.new(0.526401043, 0, 0.18221581, 0)
+_5M.Size = UDim2.new(0, 124, 0, 45)
+_5M.Font = Enum.Font.SourceSans
+_5M.Text = "5M"
+_5M.TextColor3 = Color3.fromRGB(255, 255, 255)
+_5M.TextSize = 25.000
+_5M.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1736.99841, 580.667786, 1419.3927, 0.296172559, 1.28937829e-08, -0.955134451, 1.66371663e-08, 1, 1.86583726e-08, 0.955134451, -2.14168274e-08, 0.296172559)
+end)
+
+_25M.Name = "25M"
+_25M.Parent = DRGBLX
+_25M.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+_25M.Position = UDim2.new(0.775932014, 0, 0.18221581, 0)
+_25M.Size = UDim2.new(0, 113, 0, 45)
+_25M.Font = Enum.Font.SourceSans
+_25M.Text = "25M"
+_25M.TextColor3 = Color3.fromRGB(255, 255, 255)
+_25M.TextSize = 25.000
+_25M.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1771.60522, 580.027649, 1431.12463, -0.244580224, -8.40129459e-08, -0.969629049, -8.8345125e-08, 1, -6.4360151e-08, 0.969629049, 6.99207803e-08, -0.244580224)
+end)
+	
+
+Spawn.Name = "Spawn"
+Spawn.Parent = DRGBLX
+Spawn.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Spawn.Position = UDim2.new(0.0179582722, 0, 0.337641031, 0)
+Spawn.Size = UDim2.new(0, 124, 0, 45)
+Spawn.Font = Enum.Font.SourceSans
+Spawn.Text = "Spawn"
+Spawn.TextColor3 = Color3.fromRGB(255, 255, 255)
+Spawn.TextSize = 25.000
+Spawn.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1735.57007, 578.181519, 1292.01794, 0.968165994, 5.32986455e-08, -0.250308961, -2.76936767e-08, 1, 1.05815502e-07, 0.250308961, -9.55149986e-08, 0.968165994)
+end)
+
+City.Name = "City"
+City.Parent = DRGBLX
+City.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+City.Position = UDim2.new(0.273117721, 0, 0.337641031, 0)
+City.Size = UDim2.new(0, 124, 0, 45)
+City.Font = Enum.Font.SourceSans
+City.Text = "City"
+City.TextColor3 = Color3.fromRGB(255, 255, 255)
+City.TextSize = 25.000
+City.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2194.97241, 589.402161, 622.187866, 0.379925549, -7.14600432e-08, 0.925017059, 2.53564867e-08, 1, 6.68381901e-08, -0.925017059, -1.9383537e-09, 0.379925549)
+end)
+
+Forest.Name = "Forest"
+Forest.Parent = DRGBLX
+Forest.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Forest.Position = UDim2.new(0.526401043, 0, 0.337641031, 0)
+Forest.Size = UDim2.new(0, 124, 0, 45)
+Forest.Font = Enum.Font.SourceSans
+Forest.Text = "Forest"
+Forest.TextColor3 = Color3.fromRGB(255, 255, 255)
+Forest.TextSize = 25.000
+Forest.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3248.81299, 587.782898, 1788.5387, 0.0234484617, 1.19761001e-09, -0.999725044, -1.82042237e-09, 1, 1.15524146e-09, 0.999725044, 1.79283322e-09, 0.0234484617)
+end)
+
+Plains.Name = "Plains"
+Plains.Parent = DRGBLX
+Plains.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Plains.Position = UDim2.new(0.775932014, 0, 0.337641031, 0)
+Plains.Size = UDim2.new(0, 113, 0, 45)
+Plains.Font = Enum.Font.SourceSans
+Plains.Text = "Plains"
+Plains.TextColor3 = Color3.fromRGB(255, 255, 255)
+Plains.TextSize = 25.000
+Plains.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3917.35303, 587.78302, 1694.90466, -0.586436749, 7.83904355e-08, -0.809994996, 5.9782586e-08, 1, 5.34962936e-08, 0.809994996, -1.70514021e-08, -0.586436749)
+end)
+
+Desert.Name = "Desert"
+Desert.Parent = DRGBLX
+Desert.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Desert.Position = UDim2.new(0.0179582722, 0, 0.4959988, 0)
+Desert.Size = UDim2.new(0, 124, 0, 45)
+Desert.Font = Enum.Font.SourceSans
+Desert.Text = "Desert"
+Desert.TextColor3 = Color3.fromRGB(255, 255, 255)
+Desert.TextSize = 25.000
+Desert.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4109.71973, 587.782837, 615.388611, 0.953195393, 3.48682572e-09, -0.302354991, 2.57082924e-08, 1, 9.25794268e-08, 0.302354991, -9.60193134e-08, 0.953195393)
+end)
+
+RuinedCity.Name = "Ruined City"
+RuinedCity.Parent = DRGBLX
+RuinedCity.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RuinedCity.Position = UDim2.new(0.273117721, 0, 0.4959988, 0)
+RuinedCity.Size = UDim2.new(0, 124, 0, 45)
+RuinedCity.Font = Enum.Font.SourceSans
+RuinedCity.Text = "Ruined City"
+RuinedCity.TextColor3 = Color3.fromRGB(255, 255, 255)
+RuinedCity.TextSize = 25.000
+RuinedCity.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3952.56519, 671.781555, -450.813293, 0.832397819, -4.21146815e-08, -0.554178596, 1.66962835e-08, 1, -5.09163129e-08, 0.554178596, 3.31299042e-08, 0.832397819)
+end)
+
+IceIsland.Name = "Ice Island"
+IceIsland.Parent = DRGBLX
+IceIsland.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+IceIsland.Position = UDim2.new(0.526401043, 0, 0.4959988, 0)
+IceIsland.Size = UDim2.new(0, 124, 0, 45)
+IceIsland.Font = Enum.Font.SourceSans
+IceIsland.Text = "Ice Island"
+IceIsland.TextColor3 = Color3.fromRGB(255, 255, 255)
+IceIsland.TextSize = 25.000
+IceIsland.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5167.93408, 596.193481, -888.988708, 0.802667499, -3.86069132e-08, -0.596426785, 8.36178127e-10, 1, -6.36050217e-08, 0.596426785, 5.05549629e-08, 0.802667499)
+end)
+
+QuestBoard.Name = "Quest Board"
+QuestBoard.Parent = DRGBLX
+QuestBoard.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+QuestBoard.Position = UDim2.new(0.775932014, 0, 0.4959988, 0)
+QuestBoard.Size = UDim2.new(0, 113, 0, 45)
+QuestBoard.Font = Enum.Font.SourceSans
+QuestBoard.Text = "Quest Board"
+QuestBoard.TextColor3 = Color3.fromRGB(255, 255, 255)
+QuestBoard.TextSize = 25.000
+QuestBoard.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1790.56702, 578.171326, 1222.29651, 0.642023563, 3.17049498e-08, 0.76668489, 2.70596097e-08, 1, -6.40130722e-08, -0.76668489, 6.18440978e-08, 0.642023563)
+end)
+
+TeleporterNPC.Name = "Teleporter NPC"
+TeleporterNPC.Parent = DRGBLX
+TeleporterNPC.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TeleporterNPC.Position = UDim2.new(0.0179583058, 0, 0.645559013, 0)
+TeleporterNPC.Size = UDim2.new(0, 517, 0, 45)
+TeleporterNPC.Font = Enum.Font.SourceSans
+TeleporterNPC.Text = "Teleporter NPC"
+TeleporterNPC.TextColor3 = Color3.fromRGB(255, 255, 255)
+TeleporterNPC.TextSize = 25.000
+TeleporterNPC.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1730.72205, 578.171814, 1218.04395, 0.915290236, 1.14832531e-07, -0.402794987, -1.09281224e-07, 1, 3.67643445e-08, 0.402794987, 1.03678834e-08, 0.915290236)
+end)
+
+DragonBloxAutoRebirth.Name = "Dragon Blox Auto Rebirth"
+DragonBloxAutoRebirth.Parent = DRGBLX
+DragonBloxAutoRebirth.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+DragonBloxAutoRebirth.Position = UDim2.new(0.0179583058, 0, 0.812714458, 0)
+DragonBloxAutoRebirth.Size = UDim2.new(0, 517, 0, 45)
+DragonBloxAutoRebirth.Font = Enum.Font.SourceSans
+DragonBloxAutoRebirth.Text = "Dragon Blox Auto Rebirth"
+DragonBloxAutoRebirth.TextColor3 = Color3.fromRGB(255, 255, 255)
+DragonBloxAutoRebirth.TextSize = 25.000
+DragonBloxAutoRebirth.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(loadstring(game:HttpGet("https://raw.githubusercontent.com/Skrapisismyscript/PinPointHub/main/Gamer%20moments"))())
+end)
+
+OpenClose.Name = "Open/Close"
+OpenClose.Parent = ScreenGui
+OpenClose.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+OpenClose.Position = UDim2.new(0, 0, 0.538767338, 0)
+OpenClose.Size = UDim2.new(0, 83, 0, 50)
+OpenClose.Font = Enum.Font.SourceSans
+OpenClose.Text = "Open/Close"
+OpenClose.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenClose.TextSize = 22.000
+
+-- Scripts:
+
+local function VEGTSE_fake_script() -- DRGBLX.LocalScript 
+	local script = Instance.new('LocalScript', DRGBLX)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(VEGTSE_fake_script)()
+local function XVTEB_fake_script() -- OpenClose.LocalScript 
+	local script = Instance.new('LocalScript', OpenClose)
+
+	local frame = script.Parent.Parent.DRGBLX
+	local open = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if frame.Visible == false then
+			frame.Visible = true
+		else
+			frame.Visible = false
+		end
+	end)
+	
+end
+coroutine.wrap(XVTEB_fake_script)()
